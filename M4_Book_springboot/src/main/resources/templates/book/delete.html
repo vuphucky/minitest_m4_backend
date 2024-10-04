@@ -1,0 +1,45 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org" lang="en">-->
+<!--<html lang="en">-->
+<!--<head th:replace="/layout :: head">-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Delete</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1 style="text-align: center">Delete Book</h1>-->
+<!--<h2 style="text-align: center">Are you sure</h2>-->
+<!--<p>-->
+<!--    <a href="/books">Book List</a>-->
+<!--</p>-->
+<!--<form style=text-align:center th:action="@{/books/delete}" th:object="${book}" method="post">-->
+<!--    <input th:type="hidden" name="id" th:field="*{id}">-->
+<!--    <table style="margin: auto">-->
+<!--        <tr>-->
+<!--            <td>Book Name:</td>-->
+<!--        <td th:text="${book.getName()}"></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Author Name:</td>-->
+<!--        <td th:text="${book.getAuthor()}"></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Price:</td>-->
+<!--            <td th:text="${book.getPrice()}"></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Img:</td>-->
+<!--            <td th:text="${book.getImg()}"></td>-->
+<!--        </tr>-->
+<!--        <tr th:field="category">-->
+<!--            <td>Category:</td>-->
+<!--            <td th:text="${book.getCategory().getName()}"></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td></td>-->
+<!--            <td><input type="submit" value="Delete book"></td>-->
+<!--        </tr>-->
+<!--    </table>-->
+<!--</form>-->
+<!--<footer th:replace="/layout :: footer"></footer>-->
+<!--</body>-->
+<!--</html>-->

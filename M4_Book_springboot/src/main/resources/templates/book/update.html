@@ -1,0 +1,48 @@
+<!--<!DOCTYPE html>-->
+<!--<html xmlns:th="http://www.thymeleaf.org" lang="en">-->
+<!--<html lang="en">-->
+<!--<head th:replace="/layout :: head">-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>update</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1 style="text-align: center">Update Book</h1>-->
+<!--<p>-->
+<!--<a href="/books">Book list</a>-->
+<!--</p>-->
+<!--<th:block th:if="${message}">-->
+<!--    <p th:text="${message}"></p>-->
+<!--</th:block>-->
+<!--<form style="text-align: center" th:action="@{/books/update}" th:object="${book}" method="post">-->
+<!--    <input th:type="hidden" name="id" th:field="*{id}">-->
+<!--    <table style="margin: auto">-->
+<!--        <tr>-->
+<!--            <td>Book Name:</td>-->
+<!--            <td><input type="text" th:field="*{name}"></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Author Name:</td>-->
+<!--            <td><input type="text" th:field="*{author}"></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Price:</td>-->
+<!--            <td><input type="text" th:field="*{price}"></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>Img:</td>-->
+<!--            <td><input type="text" th:field="*{img}"></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <select th:field="*{category}">-->
+<!--                <option th:each="c:${category}" th:text="${c.getName()}" th:value="${c.getId()}"></option>-->
+<!--            </select>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td></td>-->
+<!--            <td><input type="submit" value="Update"></td>-->
+<!--        </tr>-->
+<!--    </table>-->
+<!--</form>-->
+<!--<footer th:replace="/layout :: footer"></footer>-->
+<!--</body>-->
+<!--</html>-->
